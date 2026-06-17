@@ -1,6 +1,5 @@
-from rest_framework import serializers, status
+from rest_framework import serializers
 from posts.models import Group, Post, Comment
-from rest_framework.response import Response
 
 
 class PostSerializer(serializers.ModelSerializer):

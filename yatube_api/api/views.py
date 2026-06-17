@@ -1,8 +1,7 @@
 from posts.models import Group, Post, Comment
 from rest_framework import viewsets
 from .serializers import PostSerializer, GroupSerializer, CommentSerializer
-from rest_framework.permissions import AllowAny, IsAuthenticated
-from .permissions import IsOwnerOrReadOnly
+# from .permissions import IsOwnerOrReadOnly
 from django.shortcuts import get_object_or_404
 from rest_framework.exceptions import PermissionDenied
 from rest_framework.response import Response
